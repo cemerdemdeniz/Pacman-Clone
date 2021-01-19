@@ -8,12 +8,15 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    public float ghostReleaseTimer = 0f;
+    public float ghostReleaseTimer = 0;
     public int pinkyReleaseTimer = 5;
+    public int inkyReleaseTimer = 14;
+    public int clydeReleaseTimer = 21;
     public bool isInGhostHouse = false;
 
     public float moveSpeed = 3.9f;
     public Node startingPosition;
+    public Node homeNode;
     #region Switch Mode Timer Variables
     public int scatterModeTimer1 = 7;
     public int chaseModeTimer1 = 20;
@@ -199,6 +202,50 @@ public class Ghost : MonoBehaviour
 
         return targetTile;
     }
+    Vector2 GetBlueGhostTargetTile()
+    {
+        Vector2 pacManPosition = pacMan.transform.localPosition;
+        Vector2 pacmanOrientation = pacMan.GetComponent<PacMan>().orientation;
+
+        int pacManPositionX = Mathf.RoundToInt(pacManPosition.x);
+        int pacManPositionY = Mathf.RoundToInt(pacManPosition.y);
+
+        Vector2 pacManTile = new Vector2(pacManPositionX, pacManPositionY);
+
+        Vector2 targetTile = pacManTile + (2 * pacmanOrientation);
+
+        Vector2 tempBlinkyPosition = GameObject.Find("Ghost").transform.localPosition;
+
+        int blinkyPositionX = Mathf.RoundToInt(tempBlinkyPosition.x);
+        int blinkyPositionY = Mathf.RoundToInt(tempBlinkyPosition.y);
+
+        tempBlinkyPosition = new Vector2(blinkyPositionX, blinkyPositionY);
+        float distance = GetDistance(tempBlinkyPosition, targetTile);
+        distance *= 2;
+
+        targetTile = new Vector2(tempBlinkyPosition.x + distance, tempBlinkyPosition.y + distance);
+        return targetTile;
+
+    }
+    Vector2 GetOrangeGhostTargetTile()
+    {
+        //Calculate Distance
+        //If the distancec is greater than eight tiles targetin is the same as Blinky
+        //If the distance is lees than eight tile , then target his home node,so same as scatter mode
+
+        Vector2 pacManPosition = pacMan.transform.localPosition;
+        float distance = GetDistance(transform.localPosition, pacManPosition);
+        Vector2 targetTile = Vector2.zero;
+        if(distance > 8)
+        {
+            targetTile = new Vector2(Mathf.RoundToInt(pacManPosition.x), Mathf.RoundToInt(pacManPosition.y));
+
+        }else if (distance < 8)
+        {
+            targetTile = homeNode.transform.position;
+        }
+        return targetTile;
+    }
 
     Vector2 GetTargetTile()
     {
@@ -210,6 +257,15 @@ public class Ghost : MonoBehaviour
         {
             targetTile = GetPinkGhostTargetTile();
         }
+        else if (ghostType == GhostType.Blue)
+        {
+            targetTile = GetBlueGhostTargetTile();
+        }
+        else if (ghostType == GhostType.Orange)
+        {
+            targetTile = GetOrangeGhostTargetTile();
+        }
+        
         return targetTile;
     }
     void ReleasePinkGhost()
@@ -220,12 +276,34 @@ public class Ghost : MonoBehaviour
         }
     }
 
+    void ReleaseBlueGhost()
+    {
+        if(ghostType == GhostType.Blue && isInGhostHouse)
+        {
+            isInGhostHouse = false;
+        }
+    }
+    void ReleaseOrangeGhost()
+    {
+        if(ghostType == GhostType.Orange && isInGhostHouse)
+        {
+            isInGhostHouse = false;
+        }
+    }
     void ReleaseGhosts()
     {
         ghostReleaseTimer += Time.deltaTime;
         if (ghostReleaseTimer > pinkyReleaseTimer)
         {
             ReleasePinkGhost();
+        }
+        if (ghostReleaseTimer > inkyReleaseTimer)
+        {
+            ReleaseBlueGhost();
+        }
+        if (ghostReleaseTimer > clydeReleaseTimer)
+        {
+            ReleaseOrangeGhost();
         }
     }
 
@@ -235,8 +313,15 @@ public class Ghost : MonoBehaviour
     Node ChooseNextNode()
     {
         Vector2 targetTile = Vector2.zero;
+        if (currentMode == Mode.Chase)
+        {
+            targetTile = GetTargetTile();
+        }else if (currentMode == Mode.Scatter)
+        {
+            targetTile = homeNode.transform.position;
+        }
 
-        targetTile = GetTargetTile();
+        
 
         
 
