@@ -34,7 +34,7 @@ public class GameBoard : MonoBehaviour
             }
             else
             {
-                 Debug.Log("Found PacMan at : " + pos);
+                 //Debug.Log("Found PacMan at : " + pos);
             }
         }
     }

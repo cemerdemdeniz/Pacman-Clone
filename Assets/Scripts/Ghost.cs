@@ -30,6 +30,14 @@ public class Ghost : MonoBehaviour
     private int modeChangeIteration = 1;
     private float modeChangeTimer = 0;
 
+    #region Run Time Animator Controller
+    public RuntimeAnimatorController ghostUp;
+    public RuntimeAnimatorController ghostDown;
+    public RuntimeAnimatorController ghostLeft;
+    public RuntimeAnimatorController ghostRight;
+    #endregion
+
+
     public enum Mode
     {
         Chase,
@@ -79,7 +87,7 @@ public class Ghost : MonoBehaviour
 
         previousNode = currentNode;
 
-        
+        UpdateAnimatorController();
     }
 
 
@@ -89,6 +97,30 @@ public class Ghost : MonoBehaviour
         Move();
         ReleaseGhosts();
     }
+    void UpdateAnimatorController()
+    {
+        if (direction == Vector2.up)
+        {
+            transform.GetComponent<Animator>().runtimeAnimatorController = ghostUp;
+        }else if (direction == Vector2.down)
+        {
+            transform.GetComponent<Animator>().runtimeAnimatorController = ghostDown;
+        }
+        else if (direction == Vector2.left)
+        {
+            transform.GetComponent<Animator>().runtimeAnimatorController = ghostLeft;
+        }
+        else if (direction == Vector2.right)
+        {
+            transform.GetComponent<Animator>().runtimeAnimatorController = ghostRight;
+        }
+        else
+        {
+            transform.GetComponent<Animator>().runtimeAnimatorController = ghostLeft;
+        }
+    }
+
+
     void Move()
     {
         if(targetNode != currentNode && targetNode != null && !isInGhostHouse)
@@ -106,6 +138,7 @@ public class Ghost : MonoBehaviour
                 targetNode = ChooseNextNode();
                 previousNode = currentNode;
                 currentNode = null;
+                UpdateAnimatorController();
             }
             else { transform.localPosition += (Vector3)direction * moveSpeed * Time.deltaTime; }
         }
@@ -206,15 +239,16 @@ public class Ghost : MonoBehaviour
     {
         Vector2 pacManPosition = pacMan.transform.localPosition;
         Vector2 pacmanOrientation = pacMan.GetComponent<PacMan>().orientation;
-
+       
         int pacManPositionX = Mathf.RoundToInt(pacManPosition.x);
         int pacManPositionY = Mathf.RoundToInt(pacManPosition.y);
 
         Vector2 pacManTile = new Vector2(pacManPositionX, pacManPositionY);
 
         Vector2 targetTile = pacManTile + (2 * pacmanOrientation);
-
+       
         Vector2 tempBlinkyPosition = GameObject.Find("Ghost").transform.localPosition;
+       
 
         int blinkyPositionX = Mathf.RoundToInt(tempBlinkyPosition.x);
         int blinkyPositionY = Mathf.RoundToInt(tempBlinkyPosition.y);
