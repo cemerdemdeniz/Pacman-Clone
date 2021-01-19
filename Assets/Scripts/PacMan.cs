@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class PacMan : MonoBehaviour
 {
+    public Vector2 orientation;
+
     public float _speed = 4.0f;
     public Sprite idleSprite;
     private Vector2 direction = Vector2.zero;
@@ -26,6 +28,7 @@ public class PacMan : MonoBehaviour
             currentNode = node;
         }
         direction = Vector2.left;
+        orientation = Vector2.left;
         ChangePosition(direction);
 
     }
@@ -153,11 +156,13 @@ public class PacMan : MonoBehaviour
     {
         if (direction == Vector2.left)
         {
+            orientation = Vector2.left;
             transform.localScale = new Vector3(-1, 1, 1);
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
         else if (direction == Vector2.right)
         {
+            orientation = Vector2.right;
             transform.localScale = new Vector3(1, 1, 1);
             transform.localRotation = Quaternion.Euler(0, 0, 0);
 
@@ -165,11 +170,13 @@ public class PacMan : MonoBehaviour
         }
         else if (direction == Vector2.up)
         {
+            orientation = Vector2.up;
             transform.localScale = new Vector3(1, 1, 1);
             transform.localRotation = Quaternion.Euler(0, 0, 90);
         }
         else if (direction == Vector2.down)
         {
+            orientation = Vector2.down;
             transform.localScale = new Vector3(1, -1, 1);
             transform.localRotation = Quaternion.Euler(0, 0, 270);
         }

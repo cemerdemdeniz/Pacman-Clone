@@ -20,7 +20,7 @@ public class GameBoard : MonoBehaviour
         {
 
             Vector2 pos = o.transform.position;
-            if (o.name != "PacMan" && o.name != "Pellets" && o.name != "Nodes" && o.name != "NonNodes" && o.name != "Maze" && o.tag != "Maze")
+            if (o.name != "PacMan" && o.name != "Pellets" && o.name != "Nodes" && o.name != "NonNodes" && o.name != "Maze" && o.tag != "Ghost")
             {
                 if (o.GetComponent<Tile>() != null)
                 {
@@ -34,7 +34,7 @@ public class GameBoard : MonoBehaviour
             }
             else
             {
-                // Debug.Log("Found PacMan at : " + pos);
+                 Debug.Log("Found PacMan at : " + pos);
             }
         }
     }
