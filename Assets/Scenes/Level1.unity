@@ -142,6 +142,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &6395623
@@ -1224,6 +1226,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 0
   isSuperPellet: 1
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &37694704
@@ -1328,6 +1332,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &39067737
@@ -1709,6 +1715,8 @@ MonoBehaviour:
   isPortal: 1
   isPellet: 0
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 490809543}
 --- !u!1001 &49203341
@@ -1915,6 +1923,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &55362396
@@ -1989,6 +1999,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &58171677
@@ -2255,6 +2267,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &62462082
@@ -2653,6 +2667,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &75603432
@@ -3404,8 +3420,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPortal: 0
-  isPellet: 1
+  isPellet: 0
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 1
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &87185515
@@ -3849,6 +3867,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &100642996
@@ -3888,6 +3908,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &111734524
@@ -4145,6 +4167,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 0
   isSuperPellet: 1
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &117482099
@@ -4328,6 +4352,7 @@ MonoBehaviour:
   - {fileID: 1612016208}
   - {fileID: 1963646243}
   - {fileID: 497341735}
+  - {fileID: 87185515}
   validDirections: []
 --- !u!114 &126416742
 MonoBehaviour:
@@ -4344,6 +4369,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 1
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &127428751
@@ -4418,6 +4445,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &128118521
@@ -4457,6 +4486,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &132368051
@@ -4720,6 +4751,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &138749194 stripped
@@ -4743,6 +4776,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &139501251
@@ -4928,6 +4963,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &140094861
@@ -5212,6 +5249,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &150008791 stripped
@@ -5235,6 +5274,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &150170533
@@ -5471,6 +5512,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &157047802
@@ -5626,6 +5669,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &160682666 stripped
@@ -5649,6 +5694,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &165120559
@@ -5936,6 +5983,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &177061947
@@ -6564,6 +6613,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &193728989
@@ -7085,6 +7136,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &210550768
@@ -7714,6 +7767,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &232525036
@@ -8193,6 +8248,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &249588213 stripped
@@ -8216,6 +8273,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &252704903 stripped
@@ -8239,6 +8298,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &252704905
@@ -8359,6 +8420,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &253985234
@@ -8398,6 +8461,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &258875207
@@ -8817,6 +8882,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &275797472 stripped
@@ -8840,6 +8907,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &275985154
@@ -9298,6 +9367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d952e7eb4c6d8c84cb2ad02900725bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundAudioNormal: {fileID: 0}
+  backgroundAudioFrightened: {fileID: 0}
   totalPellets: 0
   score: 0
 --- !u!4 &287532193
@@ -9644,6 +9715,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &291152635 stripped
@@ -9667,6 +9740,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &295870453
@@ -9852,6 +9927,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &299417122 stripped
@@ -9875,6 +9952,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &301089241
@@ -10060,6 +10139,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &306017915
@@ -10175,6 +10256,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &313255604 stripped
@@ -10198,6 +10281,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &315534521
@@ -10272,6 +10357,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &325747967
@@ -10721,6 +10808,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &337606750
@@ -10987,6 +11076,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &341752752
@@ -11188,6 +11279,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &344104535
@@ -11556,6 +11649,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &364961387
@@ -11646,6 +11741,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &368304000 stripped
@@ -11669,6 +11766,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &370714610
@@ -12331,6 +12430,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &387806936
@@ -13019,6 +13120,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &429773485
@@ -13771,6 +13874,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &467547250 stripped
@@ -13794,6 +13899,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &470218912
@@ -13898,6 +14005,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &472230600
@@ -14418,6 +14527,8 @@ MonoBehaviour:
   isPortal: 1
   isPellet: 0
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 48801166}
 --- !u!4 &490809547 stripped
@@ -14447,6 +14558,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &492411087
@@ -14521,6 +14634,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &494549487
@@ -14702,6 +14817,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &502426249
@@ -15100,6 +15217,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &529118807 stripped
@@ -15123,6 +15242,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &531736418
@@ -15410,6 +15531,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &538181646
@@ -15514,6 +15637,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &541518111
@@ -15616,6 +15741,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &543811661 stripped
@@ -15639,6 +15766,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &543811663
@@ -16104,6 +16233,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &551210869
@@ -16226,6 +16357,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &555559822
@@ -16330,6 +16463,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &556735146
@@ -16860,6 +16995,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &569581740
@@ -16934,6 +17071,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &571089163 stripped
@@ -16957,6 +17096,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &574286180
@@ -17406,6 +17547,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &587411727
@@ -17561,6 +17704,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &592268262
@@ -17793,6 +17938,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &598142677
@@ -17948,6 +18095,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &600326580
@@ -18022,6 +18171,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &601198783
@@ -18062,6 +18213,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &605137867
@@ -18183,6 +18336,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &613830977
@@ -18500,6 +18655,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &622683791
@@ -18898,6 +19055,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &634190327
@@ -19096,6 +19255,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &639954822 stripped
@@ -19119,6 +19280,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &645785616
@@ -19700,6 +19863,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &657455585
@@ -19966,6 +20131,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &667558349
@@ -20253,6 +20420,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &679191485
@@ -20292,6 +20461,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &689761397
@@ -20447,6 +20618,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &691907804
@@ -20486,6 +20659,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &695058923
@@ -20590,6 +20765,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &695791947
@@ -20898,6 +21075,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &706686215
@@ -21067,6 +21246,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &710235363
@@ -21222,6 +21403,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &722294314
@@ -21347,6 +21530,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &723204987
@@ -21745,6 +21930,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &735529630
@@ -22650,6 +22837,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &767182759
@@ -22754,6 +22943,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &771976952 stripped
@@ -22777,6 +22968,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &771976954
@@ -23344,6 +23537,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &795485296
@@ -23840,6 +24035,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &807121112
@@ -23940,6 +24137,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &808089187
@@ -24044,6 +24243,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &812032325
@@ -24310,6 +24511,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &820112801
@@ -24618,6 +24821,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &830671479
@@ -24986,6 +25191,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &833859316
@@ -25375,6 +25582,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &842531849
@@ -25739,6 +25948,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &851414139
@@ -26183,6 +26394,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &861308949
@@ -26530,6 +26743,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &865767727
@@ -26604,6 +26819,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &875302261
@@ -26861,6 +27078,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &885205651
@@ -27552,6 +27771,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &894910425
@@ -27656,6 +27877,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &903908148
@@ -29373,6 +29596,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &941416124
@@ -29718,6 +29943,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &950783593
@@ -30035,6 +30262,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &959081755 stripped
@@ -30058,6 +30287,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &959081757
@@ -30098,6 +30329,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &962122941 stripped
@@ -30121,6 +30354,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &962122943
@@ -30161,6 +30396,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &968209056
@@ -30316,6 +30553,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &972013981
@@ -30357,6 +30596,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &978129531
@@ -30431,6 +30672,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &978400231
@@ -30633,6 +30876,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &983873966
@@ -31001,6 +31246,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &992519519
@@ -31075,6 +31322,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &993936829
@@ -31181,6 +31430,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1000908364
@@ -31873,6 +32124,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1022622739
@@ -31977,6 +32230,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1028031233
@@ -32375,6 +32630,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1038259504
@@ -32611,6 +32868,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1052746299
@@ -32766,6 +33025,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1055727976 stripped
@@ -32789,6 +33050,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1060257830
@@ -33259,6 +33522,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1072640412
@@ -33495,6 +33760,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1082474712 stripped
@@ -33518,6 +33785,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1087333723 stripped
@@ -33541,6 +33810,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1090040483
@@ -33858,6 +34129,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1097094024
@@ -33899,6 +34172,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1102083314
@@ -34209,8 +34484,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPortal: 0
-  isPellet: 1
+  isPellet: 0
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 1
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1110208421
@@ -34315,6 +34592,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1110911455
@@ -34815,6 +35094,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1134183655
@@ -35021,6 +35302,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1138216902
@@ -35405,6 +35688,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1149974082 stripped
@@ -35428,6 +35713,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1150164830
@@ -35694,6 +35981,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 0
   isSuperPellet: 1
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1157054296
@@ -35735,6 +36024,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1159186895 stripped
@@ -35758,6 +36049,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1159384865
@@ -35862,6 +36155,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1165757138
@@ -35936,6 +36231,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1171541558
@@ -36061,6 +36358,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1176922525
@@ -36406,6 +36705,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1187281836
@@ -36612,6 +36913,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1197418848
@@ -36797,6 +37100,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1199353500
@@ -36918,6 +37223,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1206684972
@@ -37073,6 +37380,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1209976476
@@ -37837,6 +38146,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1240622465
@@ -38307,6 +38618,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1256975836
@@ -38867,6 +39180,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1265246150 stripped
@@ -38890,6 +39205,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1265246152
@@ -39010,6 +39327,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1267066290
@@ -39100,6 +39419,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1270713550
@@ -39565,6 +39886,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1277105649 stripped
@@ -39588,6 +39911,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1279350696
@@ -40148,6 +40473,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1318729425
@@ -40222,6 +40549,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1319978592
@@ -40326,6 +40655,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1326728863
@@ -40613,6 +40944,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1330586008 stripped
@@ -40636,6 +40969,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1338822721 stripped
@@ -40659,6 +40994,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1338822723
@@ -40860,6 +41197,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1342692399
@@ -40934,6 +41273,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1346113123
@@ -41302,6 +41643,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1388042689
@@ -41730,6 +42073,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1397043959
@@ -41834,6 +42179,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1402686687 stripped
@@ -41857,6 +42204,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1411459625 stripped
@@ -41880,6 +42229,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1415911764
@@ -41981,6 +42332,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1416517516
@@ -42592,6 +42945,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1429996163 stripped
@@ -42615,6 +42970,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1430653869
@@ -42851,6 +43208,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1439862002
@@ -43036,6 +43395,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1450362099
@@ -44704,6 +45065,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1527428487
@@ -45264,6 +45627,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1544019898 stripped
@@ -45287,6 +45652,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1545519356
@@ -45438,6 +45805,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1550676423
@@ -45542,6 +45911,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1552281669 stripped
@@ -45565,6 +45936,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1556654777
@@ -46129,6 +46502,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1567428903 stripped
@@ -46152,6 +46527,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1567683864
@@ -46499,6 +46876,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1575055498
@@ -46573,6 +46952,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1575223081
@@ -46613,6 +46994,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1577270767
@@ -46717,6 +47100,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1578021235
@@ -46919,6 +47304,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1581804605
@@ -47090,6 +47477,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1584978799 stripped
@@ -47113,6 +47502,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1585293696
@@ -47187,6 +47578,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1594858940
@@ -47423,6 +47816,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1608202738 stripped
@@ -47446,6 +47841,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1612016205
@@ -47546,6 +47943,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1612440193 stripped
@@ -47569,6 +47968,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1612912890
@@ -48495,6 +48896,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1633981854 stripped
@@ -48518,6 +48921,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1633981856
@@ -48720,6 +49125,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1639576050
@@ -49034,6 +49441,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1645953401
@@ -49692,6 +50101,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1676659087
@@ -49847,6 +50258,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1681988898
@@ -50296,6 +50709,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1704197512
@@ -50335,6 +50750,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1707715216
@@ -50459,6 +50876,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1709499669
@@ -50563,6 +50982,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1713256817
@@ -50961,6 +51382,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1721220698
@@ -51632,6 +52055,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1762108511
@@ -51787,6 +52212,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1767255494
@@ -51958,6 +52385,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1772454747
@@ -52062,6 +52491,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1788654408 stripped
@@ -52085,6 +52516,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1789442177
@@ -52291,6 +52724,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1793432554
@@ -53098,6 +53533,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1821535699
@@ -53321,6 +53758,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1835448265
@@ -53476,6 +53915,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1840330864
@@ -53916,6 +54357,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1866463131 stripped
@@ -53939,6 +54382,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1867249337 stripped
@@ -53962,6 +54407,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1868631488
@@ -54066,6 +54513,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1872826683
@@ -54302,6 +54751,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 0
   isSuperPellet: 1
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1878161236
@@ -54487,6 +54938,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1880808346
@@ -54663,6 +55116,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1892359987
@@ -55082,6 +55537,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1898309966
@@ -55206,6 +55663,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1900381151
@@ -55361,6 +55820,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1910055963
@@ -55597,6 +56058,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1916791666
@@ -55982,6 +56445,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1935975177 stripped
@@ -56005,6 +56470,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1936457428 stripped
@@ -56028,6 +56495,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1936457430
@@ -56148,6 +56617,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1940643893
@@ -56401,6 +56872,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1956941480
@@ -56505,6 +56978,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1959694021
@@ -56579,6 +57054,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1963646240
@@ -56665,6 +57142,7 @@ MonoBehaviour:
   - {fileID: 126416741}
   - {fileID: 1612016208}
   - {fileID: 807121115}
+  - {fileID: 1109340487}
   validDirections: []
 --- !u!114 &1963646244
 MonoBehaviour:
@@ -56681,6 +57159,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 1
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &1966424322
@@ -56947,6 +57427,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &1969629579
@@ -57230,6 +57712,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &1985504296
@@ -58186,6 +58670,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &2013676445
@@ -58341,6 +58827,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &2018875978
@@ -58450,7 +58938,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.131
+  m_Volume: 0.053
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -59113,6 +59601,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2053890528
@@ -59481,6 +59971,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &2067891124
@@ -59572,6 +60064,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2071225277
@@ -59838,6 +60332,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2073946243 stripped
@@ -59861,6 +60357,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2078471614 stripped
@@ -59884,6 +60382,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2079107656
@@ -60120,6 +60620,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2092056205
@@ -60437,6 +60939,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1001 &2099422363
@@ -60673,6 +61177,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2108185950
@@ -60858,6 +61364,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2118281520
@@ -60962,6 +61470,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2124568596
@@ -61198,6 +61708,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!114 &2132783487
@@ -61532,6 +62044,8 @@ MonoBehaviour:
   isPortal: 0
   isPellet: 1
   isSuperPellet: 0
+  isGhostHouseEntrance: 0
+  isGhostHouse: 0
   didConsume: 0
   portalReceiver: {fileID: 0}
 --- !u!1 &2147350855
@@ -61634,14 +62148,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
         type: 3}
+      propertyPath: eyesUp
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
+        type: 3}
       propertyPath: ghostUp
       value: 
       objectReference: {fileID: 9100000, guid: 848bc24e5a168e1448607d4ef55ccb46, type: 2}
     - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
         type: 3}
+      propertyPath: eyesDown
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
+        type: 3}
+      propertyPath: eyesLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 32bc85c2da0be0f479bfeaa2a368fbd3,
+        type: 3}
+    - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
+        type: 3}
       propertyPath: homeNode
       value: 
       objectReference: {fileID: 541518114}
+    - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
+        type: 3}
+      propertyPath: eyesRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7253cd05657786246a3880adc1fd6d7d,
+        type: 3}
     - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
         type: 3}
       propertyPath: ghostBlue
@@ -61662,6 +62200,11 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 5.9
       objectReference: {fileID: 0}
+    - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
+        type: 3}
+      propertyPath: ghostHouse
+      value: 
+      objectReference: {fileID: 87185515}
     - target: {fileID: 2453296345840947098, guid: 1096dccfb628f3741aa33490f7aa3d8b,
         type: 3}
       propertyPath: ghostRight
@@ -61834,9 +62377,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
         type: 3}
+      propertyPath: eyesUp
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
+        type: 3}
+      propertyPath: eyesDown
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
+        type: 3}
+      propertyPath: eyesLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 32bc85c2da0be0f479bfeaa2a368fbd3,
+        type: 3}
+    - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
+        type: 3}
       propertyPath: homeNode
       value: 
-      objectReference: {fileID: 1182690858}
+      objectReference: {fileID: 1109340487}
+    - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
+        type: 3}
+      propertyPath: eyesRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7253cd05657786246a3880adc1fd6d7d,
+        type: 3}
     - target: {fileID: 4501207926058533205, guid: 390a5de2ed8b42141831eda486bfdedb,
         type: 3}
       propertyPath: ghostBlue
@@ -61928,9 +62495,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
         type: 3}
+      propertyPath: eyesUp
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
+        type: 3}
+      propertyPath: eyesDown
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
+        type: 3}
+      propertyPath: eyesLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 32bc85c2da0be0f479bfeaa2a368fbd3,
+        type: 3}
+    - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
+        type: 3}
       propertyPath: homeNode
       value: 
-      objectReference: {fileID: 1276792954}
+      objectReference: {fileID: 1109340487}
+    - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
+        type: 3}
+      propertyPath: eyesRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7253cd05657786246a3880adc1fd6d7d,
+        type: 3}
     - target: {fileID: 6694558222855692179, guid: 81cac84405890324295a2bd1074192bf,
         type: 3}
       propertyPath: ghostBlue
@@ -61957,14 +62548,38 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
         type: 3}
+      propertyPath: eyesUp
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
+        type: 3}
       propertyPath: ghostUp
       value: 
       objectReference: {fileID: 9100000, guid: 18c606d996a5c6941aebfab9d8d87d53, type: 2}
     - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
         type: 3}
+      propertyPath: eyesDown
+      value: 
+      objectReference: {fileID: 21300000, guid: a105a083c87f5284ea120375ef05dca9,
+        type: 3}
+    - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
+        type: 3}
+      propertyPath: eyesLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 32bc85c2da0be0f479bfeaa2a368fbd3,
+        type: 3}
+    - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
+        type: 3}
       propertyPath: homeNode
       value: 
       objectReference: {fileID: 949889327}
+    - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
+        type: 3}
+      propertyPath: eyesRight
+      value: 
+      objectReference: {fileID: 21300000, guid: 7253cd05657786246a3880adc1fd6d7d,
+        type: 3}
     - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
         type: 3}
       propertyPath: ghostBlue
@@ -61985,6 +62600,11 @@ PrefabInstance:
       propertyPath: ghostType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
+        type: 3}
+      propertyPath: ghostHouse
+      value: 
+      objectReference: {fileID: 87185515}
     - target: {fileID: 7569947209560495736, guid: 724e5a6dbcbdbf84fadf41372ee99668,
         type: 3}
       propertyPath: ghostRight

@@ -8,6 +8,9 @@ public class GameBoard : MonoBehaviour
     public static int boardHeight = 36;
     public GameObject[,] board = new GameObject[boardWidth, boardHeight];
 
+    public AudioClip backgroundAudioNormal;
+    public AudioClip backgroundAudioFrightened;
+
     public int totalPellets = 0;
     public int score = 0;
     void Start()
