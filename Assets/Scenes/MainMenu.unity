@@ -495,7 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd5425f639062a46b48abd70a81ffec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStartGame: 1
   startText1: {fileID: 2003811363}
   quitText: {fileID: 1536344564}
   selector: {fileID: 1828977809}

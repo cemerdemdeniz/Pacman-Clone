@@ -39,9 +39,6 @@ public class GameMenu : MonoBehaviour
         {
             SceneManager.LoadScene("Level1");
         }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Application.Quit();
-        }
+        
     }
 }

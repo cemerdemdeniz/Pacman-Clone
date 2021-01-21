@@ -1,6 +1,10 @@
 # Pacman-Clone
 
 This is a Pacman clone, developed with the [Unity 2D](https://unity.com/) game engine. I've developed the project to improve my coding skills.
+It's one of the best ways to practice.
+Four Different Mode For Enemy
+Coroutine System
+
 
 #
 
@@ -13,4 +17,5 @@ This is a Pacman clone, developed with the [Unity 2D](https://unity.com/) game e
 
 ## Screenshots
 
-![Photo1](Docs/images/img1.jpeg)
+![Giff](Docs/images/giff1.gif)
+![Giff](Docs/images/giff2.gif)

@@ -474,7 +474,7 @@ public class Ghost : MonoBehaviour
     {
         if(currentMode != Mode.Consumed )
         {
-            Debug.Log(currentMode);
+            
             frightenedModeTimer = 0;
             backgroundAudio.clip = GameObject.Find("Game").transform.GetComponent<GameBoard>().backgroundAudioFrightened;
             backgroundAudio.Play();
