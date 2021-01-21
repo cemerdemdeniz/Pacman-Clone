@@ -271,7 +271,18 @@ public class PacMan : MonoBehaviour
 
                     o.GetComponent<SpriteRenderer>().enabled = false;
                     tile.didConsume = true;
-                    GameObject.Find("Game").GetComponent<GameBoard>().score += 1;
+                    if (GameMenu.isStartGame)
+                    {
+                        GameObject.Find("Game").transform.GetComponent<GameBoard>().playerOneScore += 10;
+                    }
+                    else
+                    {
+                        if (GameObject.Find("Game").transform.GetComponent<GameBoard>().isPlayerOneUp)
+                        {
+                            GameObject.Find("Game").transform.GetComponent<GameBoard>().playerOneScore += 10;
+                        }
+                        
+                    }
                     pelletsConsumed++;
                     PlayChompSound();
                     if (tile.isSuperPellet)

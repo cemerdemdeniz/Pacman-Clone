@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
-    public bool isStartGame = true;
+    public static bool isStartGame = true;
+
+
 
     public Text startText1;
     public Text quitText;
