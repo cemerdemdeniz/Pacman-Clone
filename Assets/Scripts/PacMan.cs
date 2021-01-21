@@ -48,25 +48,33 @@ public class PacMan : MonoBehaviour
         ChangePosition(direction);
 
     }
+    public void MoveToStartingPosition()
+    {
+
+        transform.position = startingPosition.transform.position;
+        transform.GetComponent<SpriteRenderer>().sprite = idleSprite;
+
+        direction = Vector2.left;
+        orientation = Vector2.left;
+
+        UpdateOrientation();
+       
+    }
+
+
 
     public void Restart()
     {
         canMove = true;
-
-        transform.GetComponent<Animator>().runtimeAnimatorController = chompAnimation;
-        transform.GetComponent<Animator>().enabled = true;
-
-
-        transform.position = startingPosition.transform.position;
-
+        
         //When we restart the positin current node still going to be last thoug that's why you we are doing this 
         currentNode = startingPosition;
-
-        direction = Vector2.left;
-        orientation = Vector2.left;
+       
         nextDirection = Vector2.left;
 
-        ChangePosition(direction);
+       transform.GetComponent<Animator>().runtimeAnimatorController =chompAnimation;
+       transform.GetComponent<Animator>().enabled = true;
+       ChangePosition(direction);
 
     }
 

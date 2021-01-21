@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameBoard : MonoBehaviour
 {
     public static int boardWidth = 28;
     public static int boardHeight = 36;
+
+    public Text playerText;
+    public Text readyText;
 
     private bool didStartDeath = false;
 
@@ -28,7 +32,7 @@ public class GameBoard : MonoBehaviour
         {
 
             Vector2 pos = o.transform.position;
-            if (o.name != "PacMan" && o.name != "Pellets" && o.name != "Nodes" && o.name != "NonNodes" && o.name != "Maze" && o.tag != "Ghost"&&o.tag != "ghostHome")
+            if (o.name != "PacMan" && o.name != "Pellets" && o.name != "Nodes" && o.name != "NonNodes" && o.name != "Maze" && o.tag != "Ghost" && o.tag != "ghostHome" && o.name != "Canvas" && o.name != "Player" && o.name != "Ready") 
             {
                 if (o.GetComponent<Tile>() != null)
                 {
@@ -45,7 +49,69 @@ public class GameBoard : MonoBehaviour
                  //Debug.Log("Found PacMan at : " + pos);
             }
         }
+        StartGame();
     }
+    public void StartGame()
+    {
+        //Hide All Ghosts
+        GameObject[] o = GameObject.FindGameObjectsWithTag("Ghost");
+
+        foreach(GameObject ghost in o)
+        {
+            ghost.transform.GetComponent<SpriteRenderer>().enabled = false;
+            ghost.transform.GetComponent<Ghost>().canMove = false;
+
+        }
+
+        GameObject pacMan = GameObject.Find("PacMan");
+        pacMan.transform.GetComponent<SpriteRenderer>().enabled = false;
+        pacMan.transform.GetComponent<PacMan>().canMove = false;
+
+        StartCoroutine(ShowObjectsAfter(2.25f));
+    }
+
+    IEnumerator ShowObjectsAfter(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        GameObject[] o = GameObject.FindGameObjectsWithTag("Ghost");
+
+        foreach (GameObject ghost in o)
+        {
+            ghost.transform.GetComponent<SpriteRenderer>().enabled = true;         
+        }
+
+        GameObject pacMan = GameObject.Find("PacMan");
+        pacMan.transform.GetComponent<SpriteRenderer>().enabled = true;
+
+        playerText.transform.GetComponent<Text>().enabled = false;
+
+        StartCoroutine(StartGameAfter(2));
+       
+    }
+
+    IEnumerator StartGameAfter(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        GameObject[] o = GameObject.FindGameObjectsWithTag("Ghost");
+
+        foreach (GameObject ghost in o)
+        {
+            ghost.transform.GetComponent<Ghost>().canMove = true;
+        }
+
+        GameObject pacMan = GameObject.Find("PacMan");
+        pacMan.transform.GetComponent<PacMan>().canMove = true;
+
+        readyText.transform.GetComponent<Text>().enabled = false;
+
+        transform.GetComponent<AudioSource>().clip = backgroundAudioNormal;
+        transform.GetComponent<AudioSource>().Play();
+    }
+
+
+
 
     public void StartDeath()
     {
@@ -98,12 +164,14 @@ public class GameBoard : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        StartCoroutine(ProcessRestart(2));
+        StartCoroutine(ProcessRestart(1));
 
     }
 
     IEnumerator ProcessRestart (float delay)
     {
+        playerText.transform.GetComponent<Text>().enabled = true;
+        readyText.transform.GetComponent<Text>().enabled = true;
         GameObject pacMan = GameObject.Find("PacMan");
         pacMan.transform.GetComponent<SpriteRenderer>().enabled = false;
 
@@ -111,13 +179,44 @@ public class GameBoard : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        Restart();
+        StartCoroutine(ProcessRestartShowObjects(1));
+
+       
 
     }
+
+    IEnumerator ProcessRestartShowObjects(float delay)
+    {
+        playerText.transform.GetComponent<Text>().enabled = false;
+
+        yield return new WaitForSeconds(delay);
+
+        GameObject[] o = GameObject.FindGameObjectsWithTag("Ghost");
+
+        foreach (GameObject ghost in o)
+        {
+            ghost.transform.GetComponent<SpriteRenderer>().enabled = true;
+            ghost.transform.GetComponent<Ghost>().MoveToStartingPosition();
+        }
+
+        GameObject pacMan = GameObject.Find("PacMan");
+        pacMan.transform.GetComponent<Animator>().enabled = true;
+       // pacMan.transform.GetComponent<SpriteRenderer>().enabled = ;
+        pacMan.transform.GetComponent<PacMan>().MoveToStartingPosition();
+
+
+        yield return new WaitForSeconds(delay);
+
+        Restart();
+    }
+
+
 
 
     public void Restart()
     {
+        readyText.transform.GetComponent<Text>().enabled = false;
+
         pacManLives -= 1;
 
         GameObject pacMan = GameObject.Find("PacMan");

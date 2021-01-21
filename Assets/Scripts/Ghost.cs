@@ -122,12 +122,35 @@ public class Ghost : MonoBehaviour
 
         UpdateAnimatorController();
     }
+    public void MoveToStartingPosition()
+    {
+        if (transform.name != "Ghost")
+        {
+            isInGhostHouse = true;
+        }
+
+        transform.position = startingPosition.transform.position;
+        if (isInGhostHouse)
+        {
+            direction = Vector2.up;
+
+        }
+        else
+        {
+            direction = Vector2.left;
+        }
+        UpdateAnimatorController();
+    }
+
+
+
+
 
     public void Restart()
     {
         canMove = true;
 
-        transform.GetComponent<SpriteRenderer>().enabled = true;
+      
 
         currentMode = Mode.Scatter;
 
@@ -141,10 +164,7 @@ public class Ghost : MonoBehaviour
         modeChangeIteration = 1;
         modeChangeTimer = 0;
 
-        if (transform.name != "Ghost") 
-        {
-            isInGhostHouse = true;
-        }
+        
         currentNode = startingPosition;
 
         if (isInGhostHouse)
