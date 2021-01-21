@@ -2,7 +2,7 @@
 
 This is a Pacman clone, developed with the [Unity 2D](https://unity.com/) game engine. I've developed the project to improve my coding skills.
 It's one of the best ways to practice.
-Four Different Mode For Enemy
+Four Different Mode For Enemy.
 Coroutine System
 
 
