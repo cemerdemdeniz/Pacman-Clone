@@ -9,7 +9,8 @@ public class PacMan : MonoBehaviour
     public AudioClip chomp1;
     public AudioClip chomp2;
 
-
+    public RuntimeAnimatorController chompAnimation;
+    public RuntimeAnimatorController deathAnimation;
 
     public Vector2 orientation;
 
@@ -18,11 +19,14 @@ public class PacMan : MonoBehaviour
     private Vector2 direction = Vector2.zero;
     private Vector2 nextDirection;
     private bool playedChomp1 = false;
+    public bool canMove = true;
+
     public int pelletsConsumed = 0;
 
     public AudioSource audio;
 
     private Node currentNode, previousNode, targetNode;
+    private Node startingPosition;
 
 
 
@@ -31,6 +35,8 @@ public class PacMan : MonoBehaviour
         audio = transform.GetComponent<AudioSource>();
 
         Node node = GetNodeAtPosition(transform.localPosition);
+
+        startingPosition = node;
         
 
         if (node != null)
@@ -43,15 +49,39 @@ public class PacMan : MonoBehaviour
 
     }
 
+    public void Restart()
+    {
+        canMove = true;
+
+        transform.GetComponent<Animator>().runtimeAnimatorController = chompAnimation;
+        transform.GetComponent<Animator>().enabled = true;
+
+
+        transform.position = startingPosition.transform.position;
+
+        //When we restart the positin current node still going to be last thoug that's why you we are doing this 
+        currentNode = startingPosition;
+
+        direction = Vector2.left;
+        orientation = Vector2.left;
+        nextDirection = Vector2.left;
+
+        ChangePosition(direction);
+
+    }
+
 
     void Update()
     {
-
-        CheckInput();
-        Move();
-        UpdateOrientation();
-        UpdateAnimationState();
-        ConsumePellet();
+        if (canMove)
+        {
+            CheckInput();
+            Move();
+            UpdateOrientation();
+            UpdateAnimationState();
+            ConsumePellet();
+        }
+        
 
 
     }

@@ -14,7 +14,9 @@ public class Node : MonoBehaviour
         for (int i = 0; i < neighbors.Length; i++)
         {
             Node neighbor = neighbors[i];
+            
             Vector2 tempVector = neighbor.transform.localPosition - transform.localPosition;
+            
 
             validDirections[i] = tempVector.normalized;
 

@@ -18,6 +18,7 @@ public class Ghost : MonoBehaviour
 
 
     public bool isInGhostHouse = false;
+    public bool canMove = true;
 
     public float moveSpeed = 3.9f;
     public float normalMoveSpped = 5.9f;
@@ -122,14 +123,60 @@ public class Ghost : MonoBehaviour
         UpdateAnimatorController();
     }
 
+    public void Restart()
+    {
+        canMove = true;
+
+        transform.GetComponent<SpriteRenderer>().enabled = true;
+
+        currentMode = Mode.Scatter;
+
+        moveSpeed = normalMoveSpped;
+
+        previousMoveSpeed = 0;
+
+        transform.position = startingPosition.transform.position;
+
+        ghostReleaseTimer = 0;
+        modeChangeIteration = 1;
+        modeChangeTimer = 0;
+
+        if (transform.name != "Ghost") 
+        {
+            isInGhostHouse = true;
+        }
+        currentNode = startingPosition;
+
+        if (isInGhostHouse)
+        {
+            direction = Vector2.up;
+            targetNode = currentNode.neighbors[0];
+        }
+        else
+        {
+            direction = Vector2.left;
+            targetNode = ChooseNextNode();
+        }
+        previousNode = currentNode;
+        UpdateAnimatorController();
+
+    }
+
+
+
 
     void Update()
     {
-        ModeUpdate();
-        Move();
-        ReleaseGhosts();
-        CheckCollision();
-        CheckIsInGhostHouse();
+
+        if (canMove)
+        {
+            ModeUpdate();
+            Move();
+            ReleaseGhosts();
+            CheckCollision();
+            CheckIsInGhostHouse();
+        }
+        
     }
 
     void CheckCollision()
@@ -140,13 +187,19 @@ public class Ghost : MonoBehaviour
         //Return true or false if it's returns true that means the ghost rect is overlapping 
         if (ghostRect.Overlaps(pacManRect))
         {
+            
             if (currentMode == Mode.Frightened)
             {
+                
                 Consumed();
             }
             else 
             {
-                //Pacman Will Die
+             if(currentMode != Mode.Consumed)
+                {
+                    GameObject.FindGameObjectWithTag("Game").transform.GetComponent<GameBoard>().StartDeath();
+                }   
+                
             }
             
         }
@@ -386,8 +439,9 @@ public class Ghost : MonoBehaviour
     }
     public void StartFrightenedMode()
     {
-        if(currentMode != Mode.Consumed)
+        if(currentMode != Mode.Consumed )
         {
+            Debug.Log(currentMode);
             frightenedModeTimer = 0;
             backgroundAudio.clip = GameObject.Find("Game").transform.GetComponent<GameBoard>().backgroundAudioFrightened;
             backgroundAudio.Play();

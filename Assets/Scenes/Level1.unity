@@ -423,6 +423,12 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212177234727688632, guid: b08ac3ad30ff0499aa4a5042fe2f12da,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5f93fdeaf7ab06498d3e44d4115e458,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08ac3ad30ff0499aa4a5042fe2f12da, type: 3}
 --- !u!1 &18872404
@@ -4351,7 +4357,6 @@ MonoBehaviour:
   - {fileID: 941106339}
   - {fileID: 1612016208}
   - {fileID: 1963646243}
-  - {fileID: 497341735}
   - {fileID: 87185515}
   validDirections: []
 --- !u!114 &126416742
@@ -9350,7 +9355,7 @@ GameObject:
   - component: {fileID: 287532194}
   m_Layer: 0
   m_Name: Game
-  m_TagString: Untagged
+  m_TagString: Game
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9369,8 +9374,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundAudioNormal: {fileID: 0}
   backgroundAudioFrightened: {fileID: 0}
+  backgroundAudioPacmanDeath: {fileID: 8300000, guid: d656073cdfe44144bb700d9cf706dd44,
+    type: 3}
   totalPellets: 0
   score: 0
+  pacManLives: 3
 --- !u!4 &287532193
 Transform:
   m_ObjectHideFlags: 0
@@ -9392,7 +9400,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287532191}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 007a2d7825762a54e9786e9524c7c3c6, type: 3}
@@ -58921,9 +58929,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chomp1: {fileID: 8300000, guid: ca4514385c0096744a471e566c66676c, type: 3}
   chomp2: {fileID: 8300000, guid: ca4514385c0096744a471e566c66676c, type: 3}
+  chompAnimation: {fileID: 9100000, guid: fb6316d880e85405ea7a8ca1b62919f2, type: 2}
+  deathAnimation: {fileID: 9100000, guid: 6cf43882a85a7344fb11be39518b8e5f, type: 2}
   orientation: {x: 0, y: 0}
   _speed: 6
-  idleSprite: {fileID: 21300000, guid: 81da298a7a2134dbf8c1b5bb83cd5ef4, type: 3}
+  idleSprite: {fileID: 21300000, guid: 91b070a43be26024ca3dfa2ac0c8ade8, type: 3}
+  canMove: 1
   pelletsConsumed: 0
   audio: {fileID: 0}
 --- !u!82 &2024249990
@@ -58933,7 +58944,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024249985}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
